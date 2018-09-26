@@ -6,6 +6,7 @@ if(isset($_GET['news_id'])) {
     require_once 'data.php';
     require_once '/OSPanel/domains/localhost/mvc/controller/classes.php';
 
+
     echo '<pre>';
     $result = mysqli_query($con,"SELECT * FROM publication WHERE id = ".$news_id.";");
 //work with results

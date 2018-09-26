@@ -14,11 +14,11 @@ function create_tree ($categoryes, $category_tree, $max_publications){
     if(is_array($categoryes) and  isset($categoryes[$category_tree])){
         $tree = '<ul>';
 
-        $tree .= "<a href='../view/pages/news_category_list.php?category=".$category_tree."'>".$category_tree."</a>";
+        $tree .= "<a href='../pages/news_category_list.php?category=".$category_tree."'>".$category_tree."</a>";
 
         foreach($categoryes[$category_tree] as $category){
             if($pub_counter < $max_publications) {
-                $tree .= "<li><a href='../view/pages/news.php?news_id=" . $category['id'] . "'>" . $category['title'] . "</a></li>";
+                $tree .= "<li><a href='../pages/news.php?news_id=" . $category['id'] . "'>" . $category['title'] . "</a></li>";
                 $pub_counter++;
             }
         }

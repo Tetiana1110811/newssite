@@ -10,9 +10,9 @@
     <title>Page Title</title>
 </head>
 <body>
-<?php include '../../model/header.php';
-require_once '../../controller/classes.php';
-require_once "../../model/publicationsNews.php";?>
+<?php include '/OSPanel/domains/localhost/mvc/model/header.php';
+require_once '/OSPanel/domains/localhost/mvc/controller/classes.php';
+require_once "/OSPanel/domains/localhost/mvc/model/publicationsNews.php";?>
 
 
 

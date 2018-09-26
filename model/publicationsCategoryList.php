@@ -28,7 +28,7 @@ function create_tree ($categoryes, $category_tree,$max_publications){
 
         foreach($categoryes[$category_tree] as $category){
             if ($pub_counter < $max_publications) {
-                $tree .= "<li><a href='../view/pages/news_category_list.php?category=" . $category['id'] . "'>" . $category['title'] .  "</a></li>";
+                $tree .= "<li><a href=' /view/pages/news_category_list.php?category=" . $category['id'] . "'>" . $category['title'] .  "</a></li>";
                 $pub_counter++;
             }
         }
